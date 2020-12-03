@@ -1,4 +1,4 @@
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
 <!doctype html>
 <html>
     <head>
@@ -13,14 +13,13 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
         <a-scene
             vr-mode-ui="enabled: false;"
             loading-screen="enabled: false;"
-            renderer="logarithmicDepthBuffer: true;"
+            renderer="logarithmicDepthBuffer: true; colorManagement: true; physicallyCorrectLights: false;"
             arjs="trackingMethod: best; sourceType: webcam; debugUIEnabled: false;"
             id="scene"
             embedded
             gesture-detector
         >
-            <a-entity  light="type: ambient; color: #AFA; intensity: 2" 
-                      position="-1 1 0">
+            
             </a-entity>
             <a-assets>
                 <a-asset-item
@@ -67,6 +66,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
                     id="bowser-model2"
                     scale="0.023696091223576597 0.023696091223576597 0.023696091223576597"
                     position="0 0 0"
+                    animation="property: rotation; to: 0 360 0; from:0 0 0; easing:linear; loop: true; dur: 10000"
                     animation-mixer="loop: repeat"
                     gltf-model="#play-logo"
                     class="clickable"
