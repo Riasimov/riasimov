@@ -10,7 +10,7 @@ DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD
     </head>
 
     <body style="margin: 0; overflow: hidden;">
-    <div id='hideMe'>LOADING... PLEASE WAIT</div>
+    <div id='hideMe'>           LOADING... PLEASE WAIT</div>
         <a-scene
             vr-mode-ui="enabled: false;"
             loading-screen="enabled: false;"
@@ -21,7 +21,8 @@ DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD
             gesture-detector
         >
             
-            </a-entity>
+           <a-entity light="type: ambient; intensity: 1; color: #BBB"></a-entity>
+            <a-entity light="type: directional; color: #FFF; intensity: 0.6" position="-0.5 1 1"></a-entity>
             <a-assets>
                 <a-asset-item
                     id="mystery-box-asset"
