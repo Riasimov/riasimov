@@ -1,4 +1,4 @@
-FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 <!doctype html>
 <html>
     <head>
@@ -10,6 +10,7 @@ FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
     </head>
 
     <body style="margin: 0; overflow: hidden;">
+    <div id='hideMe'>Loading...</div>
         <a-scene
             vr-mode-ui="enabled: false;"
             loading-screen="enabled: false;"
@@ -19,8 +20,8 @@ FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
             embedded
             gesture-detector
         >
-            <a-entity light="type: ambient; intensity: 15; color: #FFF"></a-entity>
-            <a-entity light="type: directional; color: #FFF; intensity: 10" position="-0.5 1 1"></a-entity>
+            <a-entity light="type: ambient; intensity: 10; color: #BBB"></a-entity>
+            <a-entity light="type: directional; color: #FFF; intensity: 20" position="-0.5 1 1"></a-entity>
             </a-entity>
             <a-assets>
                 <a-asset-item
