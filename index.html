@@ -23,6 +23,10 @@
                     id="animated-asset"
                     src="https://cdn.glitch.com/6e809917-b19d-4d5e-8336-e6071cdf7d73%2Fasset.glb?v=1606865232983"
                 >
+                <a-asset-item
+                    id="mystery-box"
+                    src="https://cdn.glitch.com/6e809917-b19d-4d5e-8336-e6071cdf7d73%2Fmystery_box.glb?v=1607004089226"
+                >
             </a-assets>
 
             <a-marker
@@ -38,6 +42,26 @@
                 <a-entity
                     id="bowser-model"
                     scale="0.023696091223576597 0.023696091223576597 0.023696091223576597"
+                    position="0 0 0"
+                    animation-mixer="loop: repeat"
+                    gltf-model="#animated-asset"
+                    class="clickable"
+                    gesture-handler
+                ></a-entity>
+            </a-marker>
+            <a-marker
+                id="mystery-box"
+                type="pattern"
+                preset="custom"
+                url=https://cdn.glitch.com/6e809917-b19d-4d5e-8336-e6071cdf7d73%2Fquestion_marker_AR.patt?v=1607004073449"
+                raycaster="objects: .clickable"
+                emitevents="true"
+                cursor="fuse: false; rayOrigin: mouse;"
+                id="markerA"
+            >
+                <a-entity
+                    id="bowser-model-2"
+                    scale="0.09607829798337442 0.09607829798337442 0.09607829798337442"
                     position="0 0 0"
                     animation-mixer="loop: repeat"
                     gltf-model="#animated-asset"
