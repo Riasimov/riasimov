@@ -1,4 +1,4 @@
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD
 <!doctype html>
 <html>
     <head>
@@ -10,7 +10,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
     </head>
 
     <body style="margin: 0; overflow: hidden;">
-    <div id='hideMe'>Loading...</div>
+    <div id='hideMe'>LOADING... PLEASE WAIT</div>
         <a-scene
             vr-mode-ui="enabled: false;"
             loading-screen="enabled: false;"
@@ -20,8 +20,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
             embedded
             gesture-detector
         >
-            <a-entity light="type: ambient; intensity: 10; color: #BBB"></a-entity>
-            <a-entity light="type: directional; color: #FFF; intensity: 20" position="-0.5 1 1"></a-entity>
+            
             </a-entity>
             <a-assets>
                 <a-asset-item
@@ -44,6 +43,8 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
                 cursor="fuse: false; rayOrigin: mouse;"
                 id="markerA"
             >
+                
+                <a-entity light="type: directional; color: #FFF; intensity: 25" position="1 1 1"></a-entity>
                 <a-entity
                     id="bowser-model"
                     scale="0.09607829798337442 0.09607829798337442 0.09607829798337442"
