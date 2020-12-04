@@ -1,4 +1,3 @@
-EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE
 <!doctype html>
 <html>
     <head>
@@ -8,13 +7,14 @@ EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE
         <script src="https://raw.githack.com/AR-js-org/studio-backend/master/src/modules/marker/tools/gesture-detector.js"></script>
         <script src="https://raw.githack.com/AR-js-org/studio-backend/master/src/modules/marker/tools/gesture-handler.js"></script>
     </head>
+    <title>LOADING...PLEASE WAIT</title>
 
     <body style="margin: 0; overflow: hidden;">
     <!--	<div id='hideMe'>Loading...</div>-->
         <a-scene
             vr-mode-ui="enabled: false;"
-            loading-screen="enabled: false;"
-            renderer="logarithmicDepthBuffer: true; antialias: true; colorManagement: true; gammaOutput: true; physicallyCorrectLights: false;"
+            loading-screen="enabled: true; "dotsColor: black; backgroundColor: white;"
+            renderer="logarithmicDepthBuffer: true; antialias: true; colorManagement: true; physicallyCorrectLights: false;"
             arjs="trackingMethod: best; sourceType: webcam; debugUIEnabled: false;"
             id="scene"
             embedded
