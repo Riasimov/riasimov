@@ -1,4 +1,4 @@
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD
 <!doctype html>
 <html>
     <head>
@@ -73,7 +73,7 @@ CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
                     gltf-model="#mystery-box-asset"
                     class="clickable"
                     redirect="href: https://www.glome.it"
-                    gesture-handler
+                    
                 ></a-entity>
             </a-marker>
                 
@@ -91,12 +91,16 @@ CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
                     id="bowser-model2"
                     scale="0.023696091223576597 0.023696091223576597 0.023696091223576597"
                     position="0 0 0"
-                    animation_mouseenter="property: rotation; to: 0 360 0; from:0 0 0; easing:linear; loop: true; startEvents: mouseenter; dur: 4000"
+                    animation="property: rotation; to: 0 360 0; from:0 0 0; easing:linear; loop: true; dur: 4000"
                     animation-mixer="loop: repeat"
                     gltf-model="#play-logo"
                     class="clickable"
                     gesture-handler
                 ></a-entity>
+                <a-text 
+                    value="DOUBLE CLICK ME"
+                    position="1 1 0"                       
+                ></a-text>
             </a-marker>
 
             <a-entity camera></a-entity>
