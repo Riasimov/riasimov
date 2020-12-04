@@ -1,4 +1,4 @@
-GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 <!doctype html>
 <html>
     <head>
@@ -13,7 +13,7 @@ GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG
     <!--	<div id='hideMe'>Loading...</div>-->
         <a-scene
             vr-mode-ui="enabled: false;"
-            loading-screen="enabled: true;"
+            loading-screen="enabled: false;"
             renderer="logarithmicDepthBuffer: true; antialias: true; colorManagement: true; physicallyCorrectLights: false;"
             arjs="trackingMethod: best; sourceType: webcam; debugUIEnabled: false;"
             id="scene"
@@ -45,8 +45,8 @@ GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG
                 cursor="fuse: false; rayOrigin: mouse;"
                 id="markerA"
             >
-                <a-entity light="type: ambient; intensity: 15; color: #BBB"></a-entity>
-                <a-entity light="type: spot; intensity: 5 angle: 45"></a-entity>
+                <a-entity light="type: ambient; intensity: 100; color: #BBB"></a-entity>
+                <a-entity light="type: spot; intensity: 25 angle: 45"></a-entity>
                 <a-entity
                     id="bowser-model"
                     scale="0.09607829798337442 0.09607829798337442 0.09607829798337442"
