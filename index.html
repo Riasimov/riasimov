@@ -1,3 +1,4 @@
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 <!doctype html>
 <html>
     <head>
@@ -6,6 +7,26 @@
         <script src="https://raw.githack.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js"></script>
         <script src="https://raw.githack.com/AR-js-org/studio-backend/master/src/modules/marker/tools/gesture-detector.js"></script>
         <script src="https://raw.githack.com/AR-js-org/studio-backend/master/src/modules/marker/tools/gesture-handler.js"></script>
+        <script>
+      AFRAME.registerComponent('redirect', {
+
+      schema: {
+        href: {default: ''}
+      },
+
+      init() {
+        var data = this.data;
+        var el = this.el;  
+
+         // react to the click
+         this.el.addEventListener('click', function () {
+           // navigate to another url
+           window.location = data.href;
+         })
+      }
+    });
+
+</script>  
     </head>
     <!--	<title>LOADING...PLEASE WAIT oppure inserisci l'istruzione</title> -->
 
@@ -50,6 +71,7 @@
                     animation-mixer="loop: repeat"
                     gltf-model="#mystery-box-asset"
                     class="clickable"
+                    redirect="href: https://www.glome.it"
                     gesture-handler
                 ></a-entity>
             </a-marker>
@@ -68,7 +90,7 @@
                     id="bowser-model2"
                     scale="0.023696091223576597 0.023696091223576597 0.023696091223576597"
                     position="0 0 0"
-                    animation="property: rotation; to: 0 360 0; from:0 0 0; easing:linear; loop: true; dur: 4000"
+                    animation="property: rotation; to: 0 360 0; from:0 0 0; easing:linear; loop: true; begin: click; dur: 4000"
                     animation-mixer="loop: repeat"
                     gltf-model="#play-logo"
                     class="clickable"
