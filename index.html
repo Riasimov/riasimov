@@ -21,8 +21,8 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
             gesture-detector
         >
             
-           <a-entity light="type: ambient; color: #BBB"></a-entity>
-            <a-entity light="type: directional; color: #FFF; intensity: 0.6" position="-0.5 1 1"></a-entity>
+          <!--	 <a-entity light="type: ambient; color: #BBB"></a-entity>
+            <a-entity light="type: directional; color: #FFF; intensity: 0.6" position="-0.5 1 1"></a-entity> -->
             
             <a-assets>
                 <a-asset-item
@@ -45,11 +45,11 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
                 cursor="fuse: false; rayOrigin: mouse;"
                 id="markerA"
             >
-                <a-entity light="type: ambient; intensity: 100; color: #BBB"></a-entity>
-                <a-entity light="type: spot; intensity: 25 angle: 45"></a-entity>
+                
                 <a-entity
                     id="bowser-model"
                     scale="0.09607829798337442 0.09607829798337442 0.09607829798337442"
+                    animation="property: light.intensity; to 40;"
                     animation-mixer="loop: repeat"
                     gltf-model="#mystery-box-asset"
                     class="clickable"
