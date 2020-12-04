@@ -1,4 +1,4 @@
-FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG
 <!doctype html>
 <html>
     <head>
@@ -10,10 +10,10 @@ FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
     </head>
 
     <body style="margin: 0; overflow: hidden;">
-    <div id='hideMe'>           LOADING... PLEASE WAIT</div>
+    <!--	<div id='hideMe'>Loading...</div>-->
         <a-scene
             vr-mode-ui="enabled: false;"
-            loading-screen="enabled: false;"
+            loading-screen="enabled: true;"
             renderer="logarithmicDepthBuffer: true; antialias: true; colorManagement: true; physicallyCorrectLights: false;"
             arjs="trackingMethod: best; sourceType: webcam; debugUIEnabled: false;"
             id="scene"
@@ -23,6 +23,7 @@ FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
             
            <a-entity light="type: ambient; color: #BBB"></a-entity>
             <a-entity light="type: directional; color: #FFF; intensity: 0.6" position="-0.5 1 1"></a-entity>
+            
             <a-assets>
                 <a-asset-item
                     id="mystery-box-asset"
@@ -45,7 +46,7 @@ FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
                 id="markerA"
             >
                 <a-entity light="type: ambient; intensity: 15; color: #BBB"></a-entity>
-                <a-entity light="type: directional; color: #FFF; intensity: 25" position="1 1 1"></a-entity>
+                <a-entity light="type: spot; intensity: 5 angle: 45"></a-entity>
                 <a-entity
                     id="bowser-model"
                     scale="0.09607829798337442 0.09607829798337442 0.09607829798337442"
