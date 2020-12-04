@@ -1,4 +1,3 @@
-EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE
 <!doctype html>
 <html>
     <head>
@@ -35,6 +34,17 @@ EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE
     <!--	<div id='hideMe'>Loading...</div>-->
      <!--	subito sotto questo primo a-scene, puoi inserire e modificare lights... queste sono quelle di default <a-entity light="type: ambient; color: #BBB"></a-entity>
             <a-entity light="type: directional; color: #FFF; intensity: 0.6" position="-0.5 1 1"></a-entity> --> 
+     <!--	da mettere dopo ENTITY, DENTRO MARKER
+            <a-text 
+                    value="DOUBLE CLICK ME"
+                    geometry="primitive:plane"
+                    position="0 2 1"
+                    align="center"
+                    color="white"
+                    scale="0.3 0.3"
+                    class="clickable"
+                    redirect="href: https://www.glome.it" 
+                    ></a-text>   -->
         <a-scene
             vr-mode-ui="enabled: false;"
             loading-screen="enabled: true; "dotsColor: black; backgroundColor: white;"
@@ -54,6 +64,9 @@ EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE
                     id="play-logo"
                     src="https://cdn.glitch.com/6e809917-b19d-4d5e-8336-e6071cdf7d73%2Fasset.glb?v=1606865232983"
                 ></a-asset-item>
+                <a-assets>
+                <img id="glome_logo" src="https://cdn.glitch.com/6e809917-b19d-4d5e-8336-e6071cdf7d73%2FGlome_Logo_PNG_RGB.png?v=1607074731219">
+                </a-assets>
             </a-assets>
 
             <a-marker
@@ -97,17 +110,15 @@ EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE
                     class="clickable"
                     gesture-handler
                 ></a-entity>
-                <a-text 
-                    value="DOUBLE CLICK ME"
-                    geometry="primitive:plane"
-                    position="0 5 1"
-                    align="center"
-                    color="white"
-                    scale="0.3 0.3"
+                <a-image 
+                    src="#glome_logo"
+                    position "0 2 0"
                     class="clickable"
                     redirect="href: https://www.glome.it"
+                
+                ></a-image>
                     
-                ></a-text>
+                ></a-text> //
             </a-marker>
 
             <a-entity camera></a-entity>
