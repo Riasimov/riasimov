@@ -23,7 +23,6 @@
             gesture-detector
         >
             
-            
             <a-assets>
                 <a-asset-item
                     id="mystery-box-asset"
@@ -44,12 +43,10 @@
                 emitevents="true"
                 cursor="fuse: false; rayOrigin: mouse;"
                 id="markerA"
-            >
-                <!-- animation="property: light.intensity; to 40; dur: 10000000000" non funziona -->
+            >   
                 <a-entity
                     id="bowser-model"
-                    scale="0.09607829798337442 0.09607829798337442 0.09607829798337442"
-               
+                    scale="0.5 0.5 0.5"
                     animation-mixer="loop: repeat"
                     gltf-model="#mystery-box-asset"
                     class="clickable"
