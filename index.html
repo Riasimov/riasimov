@@ -1,4 +1,4 @@
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD
 <!doctype html>
 <html>
     <head>
@@ -14,7 +14,7 @@ CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
         <a-scene
             vr-mode-ui="enabled: false;"
             loading-screen="enabled: false;"
-            renderer="logarithmicDepthBuffer: true; antialias: true; colorManagement: true; physicallyCorrectLights: false;"
+            renderer="logarithmicDepthBuffer: true; antialias: true; colorManagement: true; "gammaOutput: true;" physicallyCorrectLights: false;"
             arjs="trackingMethod: best; sourceType: webcam; debugUIEnabled: false;"
             id="scene"
             embedded
@@ -45,11 +45,11 @@ CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
                 cursor="fuse: false; rayOrigin: mouse;"
                 id="markerA"
             >
-                
+                <!-- animation="property: light.intensity; to 40; dur: 10000000000" non funziona -->
                 <a-entity
                     id="bowser-model"
                     scale="0.09607829798337442 0.09607829798337442 0.09607829798337442"
-                    animation="property: light.intensity; to 40; dur: 10000000000"
+               
                     animation-mixer="loop: repeat"
                     gltf-model="#mystery-box-asset"
                     class="clickable"
