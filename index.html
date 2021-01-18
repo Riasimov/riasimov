@@ -1,4 +1,4 @@
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
 <!doctype html>
 <html>
     <head>
@@ -64,6 +64,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
             loading-screen="enabled: true; "dotsColor: black; backgroundColor: white;"
             renderer="logarithmicDepthBuffer: true; antialias: true; colorManagement: true; physicallyCorrectLights: false;"
             arjs="trackingMethod: best; sourceType: webcam; debugUIEnabled: false;"
+            light="type: directional; color: #FFF; intensity: 0.6" position="-0.5 1 1;"
             id="scene"
             embedded
             gesture-detector
@@ -89,7 +90,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
                             
                 <a-entity
                     id="bowser-model"
-                    scale="0.6 0.6 0.6"
+                    scale="0.35 0.35 0.35"
                     rotation= "-90 0 80"
                     animation-mixer="loop: repeat"
                     gltf-model="#muffin"
