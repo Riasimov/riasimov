@@ -1,4 +1,4 @@
-BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 <!doctype html>
 <html>
     <head>
@@ -64,12 +64,14 @@ BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
             loading-screen="enabled: true; "dotsColor: black; backgroundColor: white;"
             renderer="logarithmicDepthBuffer: true; antialias: true; colorManagement: true; physicallyCorrectLights: false;"
             arjs="trackingMethod: best; sourceType: webcam; debugUIEnabled: false;"
-            light="type: directional; color: #FFF; intensity: 0.6" position="-0.5 1 1;"
+            
             id="scene"
             embedded
             gesture-detector
         >
-            
+            <a-entity light="type: ambient; color: #BBB"></a-entity>
+            <a-entity light="type: directional; color: #FFF; intensity: 1" position="-0.5 1 1"></a-entity>
+                                                                                                
             <a-assets>
                 <a-asset-item
                     id="muffin"
